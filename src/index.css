@@ -1,13 +1,71 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+:root{
+--primary-color: #5bb462;
+  --primary-dark: #4f9c55;
+  --secondary-color: #ffea00;
+  --secondary-dark:#e3d002;
+  --overlay: rgba(0,0,0,.7)
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-size:1.2rem;
+  line-height: 1.2;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  padding: 17px 28px;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  /* background-color: var(--primary-color);
+  border: 1px solid var(--primary-color); */
+
+  border-radius: 4px;
+  cursor: pointer;
+
+  background-image:     linear-gradient(
+      to right, 
+      #E7484F,
+      #F68B1D, 
+      #FCED00,
+      #009E4F,
+      #00AAC3,
+      #732982
+    );
+  animation:slidebg 2s linear infinite;
+}
+
+.button:hover {
+  /* background: var(--primary-dark); */
+  background: gold;
+  border: 1px solid var(--primary-dark);
+}
+
+.line {
+  display: block;
+  width: 90px;
+  height: 3px;
+  margin: 5px auto;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
 }

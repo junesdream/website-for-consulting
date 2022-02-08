@@ -1,0 +1,77 @@
+.testimonials {
+    width: 100%;
+    background-image: url('https://images.pexels.com/photos/6446671/pexels-photo-6446671.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+    background-size: cover;
+}
+
+.testimonials .container {
+    width: 1240px;
+    padding: 4rem 2rem;
+}
+
+.testimonials h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color:#353839;
+}
+
+.testimonials .container .content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    margin: 4rem 0;
+}
+
+.testimonials .card {
+    border: 1px solid #353839;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgb(0,0,0,.2);
+    padding: 1rem;
+     background-color:#FEFEFA;
+}
+
+.testimonials img {
+    width: 100px;
+    border-radius: 50px;
+    margin-top: -2rem;
+}
+
+
+.testimonials .card p {
+    color: #2D383A ;
+
+    font-size: 1.1rem;
+    margin: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.testimonials .card span {
+    color: gold;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 940px) {
+    .testimonials .container {
+        width: 100%;
+    }
+
+    .testimonials .container .content {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials .card {
+        max-width: 100%;
+        margin: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
